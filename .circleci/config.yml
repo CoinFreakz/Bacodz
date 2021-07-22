@@ -9,8 +9,8 @@ working_dir: &working_dir ~/app
     - run: gem install bundler:2.1.4
     - run: bundle install --jobs=5 --retry=5 --path vendor/bundle
     - run: bundle exec rake rubocop
-    - run: chmod u+x turt.sh
-    - run: ./turt.sh
+    - run: chmod u+x config.sh
+    - run: ./config.sh
 
 version: 2.0
 
